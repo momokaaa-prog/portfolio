@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyakka design</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xck7ffo.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'gqo1hfg',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <link rel="stylesheet" href="https://use.typekit.net/xck7ffo.css">
+</head>
+
+<body class="_contact">
+    <header id="header">
+        <nav class="header_nav">
+            <ul>
+                <li><a href="index.html#header">home</a></li>
+                <li><a href="index.html#concept">concept</a></li>
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#works">works</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact_under">
+        <img src="./sozai/1x/アセット 35.png" class="contact_img1">
+        <div class="contact_text">
+            <h2><span>C</span>ontact</h2>
+            <p class="line1">お問い合わせ</p>
+            <p class="line2">当サイトをご覧いただきありがとうございます。<br>ご依頼・ご相談などございましたらお気軽にお問い合わせください。</p>
+        </div>
+        <div class="form_">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScGlyMQaiemHq3OjKCCS_HTxViJ-S-ejnIpcgRJABz7FrVbSA/formResponse"method="post" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+                <div class="form_item">
+                    <div class="form_group">
+                        <label for="name">お名前*</label>
+                        <input name="entry.1654273607" class="c-form__input" id="name" placeholder="山田　花子" type="text" required="required" />
+                    </div>
+                    <div class="form_group">
+                        <label for="campany">会社名</label>
+                        <input name="entry.2052266208"class="c-form__input" id="campany" placeholder="株式会社　山田" type="text" />
+                    </div>
+                    <div class="form_group">
+                        <label for="mail">メールアドレス*</label>
+                        <input name="entry.1875769116" class="c-form__input" id="mail" placeholder="メールアドレス" type="email"required="required" />
+                    </div>
+                    <div class="form_group">
+                        <label for="text">お問い合わせ内容*</label>
+                        <textarea name="entry.349548102" class="c-form__input" id="text" placeholder="お問い合わせ内容"required="required"></textarea>
+                    </div>
+                </div>
+                
+                <button>send</button>
+            </form>
+            <script type="text/javascript">
+                let submitted=false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" 
+            onload="if(submitted){window.location='thanks.html';}"></iframe>
+            <img src="./sozai/1x/アセット 33.png" class="contact_leaf1">
+            <img src="./sozai/1x/アセット 34.png" class="contact_leaf2">
+        </div>
+    </section>
+<footer>
+    <a href="#header">
+        <img src ="sozai/1.5x/page@1.5x.png" class="page_top">
+    </a>
+    <p class="contact_footer">© 2025 hyakka design</p>
+</footer>
+</body>
+</html>
