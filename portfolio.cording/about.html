@@ -31,14 +31,31 @@
                 <li><a href="index.html#contact">contact</a></li>
             </ul>
         </nav>
+        <div class="hamburger_menu">
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="header_nav-sp">
+            <ul>
+                <li><a href="index.html#header">home</a></li>
+                <li><a href="index.html#concept">concept</a></li>
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#works">works</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="about_about">
             <h2><span>A</span>bout</h2>
-            <img src="./sozai/1x/about_leaf.png" class="leaf">
+            <picture>
+                <source srcset="./sozai/1x/about_leaf-sp.png" media="(max-width:768px)">
+                <img src="./sozai/1x/about_leaf.png" class="leaf">
+            </picture>
             <div class="about_flex">
                 <img src="./sozai/1x/profile.png" class="profile">
-                <div class="text">
+                <img src="./sozai/1x/profile_sp.png" class="profile_sp">
+                <div class="profile_text">
                     <h3>泉地 百花</h3>
                     <p class="name">izumichi momoka</p>
                     <p class="name2">2005年1月17日生まれ/静岡県出身・在住</p>
@@ -78,17 +95,29 @@
             <div class="contact_container">
                 <h2>contact</h2>
                 <a href="contact.html">
-                    <img src="./sozai/1x/アセット 18.png" class="mikan">
+                    <img src="./sozai/1.5x/orenge.png" class="mikan">
                 </a>
                 <p class="footer_text">小さなご相談からでも大歓迎です。<br>あなたの想いの芽が育つよう、お手伝いできれば嬉しいです。<br>お気軽にご相談ください。</p>
                 <p class="footer">© 2025 hyakka design</p>
-                <img class="contact1" src="./sozai/1x/アセット 19.png">
-                <img class="contact2" src="./sozai/1x/アセット 20.png">
-                <a href="#header" class="page_top">
-                    <img src ="sozai/1x/pagetop.png">
-                </a>
+                <img class="contact1" src="./sozai/1x/leaf_1.png">
+                <img class="contact2" src="./sozai/1x/leaf_2.png">
+                <a href="#header">
+                    <picture>
+                        <source srcset="sozai/1.5x/page@1.5x.png" media="(max-width:768px)">
+                        <img src ="./sozai/1.5x/totop@1.5x.png" class="page_top">
+                    </picture>
+                </a>    
             </div>
         </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".hamburger_menu").click(function(){
+                $(".hamburger_menu").toggleClass("open");
+                $(".header_nav-sp").fadeToggle();
+            })
+        });
+    </script>
 </body>
 </html>

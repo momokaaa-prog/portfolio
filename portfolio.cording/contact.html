@@ -32,9 +32,23 @@
                 <li><a href="index.html#contact">contact</a></li>
             </ul>
         </nav>
+        <div class="hamburger_menu">
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="header_nav-sp">
+            <ul>
+                <li><a href="index.html#header">home</a></li>
+                <li><a href="index.html#concept">concept</a></li>
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#works">works</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="contact_under">
-        <img src="./sozai/1x/アセット 35.png" class="contact_img1">
+        <img src="./sozai/1x/contactmikan.png" class="contact_img1">
+        <img src="./sozai/1.5x/mikan_sp@1.5x.png" class="contact_sp">
         <div class="contact_text">
             <h2><span>C</span>ontact</h2>
             <p class="line1">お問い合わせ</p>
@@ -68,15 +82,26 @@
             </script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" 
             onload="if(submitted){window.location='thanks.html';}"></iframe>
-            <img src="./sozai/1x/アセット 33.png" class="contact_leaf1">
-            <img src="./sozai/1x/アセット 34.png" class="contact_leaf2">
+            <img src="./sozai/1.5x/contact@1.5x.png" class="contact_leaf1">
         </div>
     </section>
 <footer>
     <a href="#header">
-        <img src ="sozai/1.5x/page@1.5x.png" class="page_top">
-    </a>
+                    <picture>
+                        <source srcset="sozai/1.5x/page@1.5x.png" media="(max-width:768px)">
+                        <img src ="./sozai/1.5x/totop@1.5x.png" class="page_top">
+                    </picture>
+                </a>    
     <p class="contact_footer">© 2025 hyakka design</p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".hamburger_menu").click(function(){
+                $(".hamburger_menu").toggleClass("open");
+                $(".header_nav-sp").fadeToggle();
+            })
+        });
+</script>
 </body>
 </html>
