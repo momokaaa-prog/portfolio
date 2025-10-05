@@ -49,10 +49,10 @@
     <section class="works_inner">
         <div class="works_item">
             <div class="works_left">
-                <h3>hyakka design</h3>
-                <img src="../sozai/1.5x/website_1@1.5x.png" class="banner">
-                <img src="../sozai/1x/Hyakka.png" class="mockup_pc_sp">
-                <dl>
+                <h3 class="fade_under">hyakka design</h3>
+                <img src="../sozai/1.5x/website_1@1.5x.png" class="banner fade_under">
+                <img src="../sozai/1x/Hyakka.png" class="mockup_pc_sp fade_under">
+                <dl class="fade_under">
                     <div>
                         <dt>概要</dt>
                         <dd>「想いやアイデアの芽が果実まで成長し、それがまた次の芽になる。そのお手伝いをする。」それが伝わるように、芽や枝、果実をちりばめ、余白を大きめに取りました。
@@ -74,7 +74,7 @@
             </div>
             <picture class="mockup_right">
                 <source srcset="../sozai/2x/hyakka_sp_1@2x.png" media="(max-width:960px)">
-                <img src="../sozai/1.5x/hyakka_@1.5x.png" class="works_under">
+                <img src="../sozai/1.5x/hyakka_@1.5x.png" class="works_under fade_under">
             </picture>
         </div>
         <a href="../index.html#works" class="back_list">
@@ -103,14 +103,7 @@
         </section>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $(".hamburger_menu").click(function(){
-                $(".hamburger_menu").toggleClass("open");
-                $(".header_nav-sp").fadeToggle();
-            })
-        });
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

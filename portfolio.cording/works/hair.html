@@ -49,10 +49,10 @@
     <section class="works_inner">
         <div class="works_item">
             <div class="works_left">
-                <h3>LIFESTYLE FIT</h3>
-                <img src="../sozai/1.5x/website_1@1.5x.png" class="banner">
-                <img src="../sozai/1x/life.png" class="mockup_pc_sp">
-                <dl>
+                <h3 class="fade_under">LIFESTYLE FIT</h3>
+                <img src="../sozai/1.5x/website_1@1.5x.png" class="banner fade_under">
+                <img src="../sozai/1x/life.png" class="mockup_pc_sp fade_under">
+                <dl class="fade_under">
                     <div>
                         <dt>概要</dt>
                         <dd>美容室（架空）のリニューアルwebサイト20～50代の女性を対象に、認知向上、予約獲得、SNSフォロワーUPを目的にピンクを基調に作成しました。
@@ -74,7 +74,7 @@
             </div>
             <picture class="mockup_right">
                 <source srcset="../sozai/2x/life_sp@2x.png" media="(max-width:960px)">
-                <img src="../sozai/1.5x/hair@1.5x.png" class="works_under">
+                <img src="../sozai/1.5x/hair@1.5x.png" class="works_under fade_under">
             </picture>
         </div>
         <a href="../index.html#works3" class="back_list">
@@ -103,14 +103,7 @@
         </section>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $(".hamburger_menu").click(function(){
-                $(".hamburger_menu").toggleClass("open");
-                $(".header_nav-sp").fadeToggle();
-            })
-        });
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

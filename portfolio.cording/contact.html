@@ -47,18 +47,20 @@
         </nav>
     </header>
     <section class="contact_under">
-        <img src="./sozai/1x/contactmikan.png" class="contact_img1">
-        <img src="./sozai/1.5x/mikan_sp@1.5x.png" class="contact_sp">
-        <div class="contact_text">
-            <h2><span>C</span>ontact</h2>
-            <p class="line1">お問い合わせ</p>
-            <p class="line2">当サイトをご覧いただきありがとうございます。<br>ご依頼・ご相談などございましたらお気軽にお問い合わせください。</p>
+        <div class="stars">
+            <img src="./sozai/1x/contactmikan.png" class="contact_img1">
+            <img src="./sozai/1.5x/mikan_sp@1.5x.png" class="contact_sp">
         </div>
-        <div class="form_">
+        <div class="contact_text">
+            <h2 class="fade_under"><span>C</span>ontact</h2>
+            <p class="line1 fade_under">お問い合わせ</p>
+            <p class="line2 fade_under">当サイトをご覧いただきありがとうございます。<br>ご依頼・ご相談などございましたらお気軽にお問い合わせください。</p>
+        </div>
+        <div class="form_ fade_under">
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScGlyMQaiemHq3OjKCCS_HTxViJ-S-ejnIpcgRJABz7FrVbSA/formResponse"method="post" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
                 <div class="form_item">
                     <div class="form_group">
-                        <label for="name">お名前*</label>
+                        <label for="name">お名前<span>*</span></label>
                         <input name="entry.1654273607" class="c-form__input" id="name" placeholder="山田　花子" type="text" required="required" />
                     </div>
                     <div class="form_group">
@@ -66,11 +68,11 @@
                         <input name="entry.2052266208"class="c-form__input" id="campany" placeholder="株式会社　山田" type="text" />
                     </div>
                     <div class="form_group">
-                        <label for="mail">メールアドレス*</label>
+                        <label for="mail">メールアドレス<span>*</span></label>
                         <input name="entry.1875769116" class="c-form__input" id="mail" placeholder="メールアドレス" type="email"required="required" />
                     </div>
                     <div class="form_group">
-                        <label for="text">お問い合わせ内容*</label>
+                        <label for="text">お問い合わせ内容<span>*</span></label>
                         <textarea name="entry.349548102" class="c-form__input" id="text" placeholder="お問い合わせ内容"required="required"></textarea>
                     </div>
                 </div>
@@ -95,13 +97,6 @@
     <p class="contact_footer">© 2025 hyakka design</p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $(".hamburger_menu").click(function(){
-                $(".hamburger_menu").toggleClass("open");
-                $(".header_nav-sp").fadeToggle();
-            })
-        });
-</script>
+<script src="./js/script.js"></script>
 </body>
 </html>

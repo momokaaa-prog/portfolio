@@ -49,11 +49,11 @@
     <section class="works_inner">
         <div class="works_item">
             <div class="banner_left">
-                <h3>ハンバーガー広告用バナー</h3>
-                <img src="../sozai/1.5x/bannr@1.5x.png" class="banner">
-                <img src="../sozai/2x/rich_sp@2x.png" class="banner_sp">
-                <img src="../sozai/2x/pop_sp@2x.png" class="banner_sp">
-                <dl>
+                <h3 class="fade_under">ハンバーガー広告用バナー</h3>
+                <img src="../sozai/1.5x/bannr@1.5x.png" class="banner fade_under">
+                <img src="../sozai/2x/rich_sp@2x.png" class="banner_sp fade_under">
+                <img src="../sozai/2x/pop_sp@2x.png" class="banner_sp fade_under">
+                <dl class="fade_under">
                     <div class="burger_inner">
                         <dt>概要</dt>
                         <dd>新登場のハンバーガーのweb広告用バナー（架空）サイズ違いで高級感ver.とPOPver.の二種類作成。</dd>
@@ -83,7 +83,7 @@
                 </dl>
             </div>
             <div class="mockup_right">
-                <img src="../sozai/1.5x/burger.@1.5x.png" class="banner_right">
+                <img src="../sozai/1.5x/burger.@1.5x.png" class="banner_right fade_under">
             </div>
         </div>
         <a href="../index.html#banner1" class="back_list">
@@ -112,14 +112,7 @@
         </section>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $(".hamburger_menu").click(function(){
-                $(".hamburger_menu").toggleClass("open");
-                $(".header_nav-sp").fadeToggle();
-            })
-        });
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
