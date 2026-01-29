@@ -3,6 +3,11 @@ $(function () {
         $(".hamburger_menu").toggleClass("open");
         $(".header_nav-sp").fadeToggle();
     });
+
+    $(".header_nav-sp a").click(function () {
+        $(".header_nav-sp").fadeOut(); 
+        $(".hamburger_menu").removeClass("open");
+    });
 });
 
 $(function () {
@@ -15,6 +20,7 @@ $(function () {
         }
     });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

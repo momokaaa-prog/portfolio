@@ -144,12 +144,12 @@ h2 span{
 }
 
 .container_01 {
-    margin: 0;
-    padding: 0;
-    height: 300px;
-    display: flex;
-    align-items: center;
+    height: 120px;
+    width: 120px;
     overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 3%;
 }
 
 .scroll-down_01 {
@@ -159,8 +159,6 @@ h2 span{
     color: #ffebc2;
     font-family: serif;
     text-decoration: none;
-    left: 6%;
-    top: 80px;
 }
 
 .circle-text_01 {
@@ -533,7 +531,7 @@ h2 span{
 }
 
 .works_img1{
-    max-width: 26%;
+    max-width: 23%;
     position: absolute;
     top: -60px;
     z-index: 2;
@@ -805,9 +803,10 @@ h2 span{
     position: fixed;
     right: 3%;
     height: auto;
-    max-width: 10%;
+    max-width: 120px;
     transition: transform 0.3s,filter 0.3s;
     bottom: 20px;
+    width: 100%;
 }
 
 .page_top:hover{
@@ -973,7 +972,8 @@ h2 span{
 .line2{
     font-size: 24px;
     margin-top: 75px;
-    margin-bottom: 225px;
+    margin-bottom: 180px;
+    line-height: 1.5;
 }
 
 .stars{
@@ -1058,6 +1058,18 @@ button{
     cursor: pointer;
 }
 
+
+.works_left a{
+    color: #fa8200;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+
+.works_left a:hover{
+    color: #ffebc2;
+    transform: scale(1.05);
+}
 button:hover{
     background-color: #fa8200;
     transform: scale(1.05);
@@ -1145,7 +1157,7 @@ footer{
 
 .works_item h3{
     color: #ff9f1c;
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 120px;
     margin-bottom: 40px;
     text-align: center;
@@ -1194,6 +1206,7 @@ dd{
     margin-top: 260px;
 }
 
+
 .works_flex{
     display: flex;
 }
@@ -1240,8 +1253,8 @@ dd{
 .fade_under{
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 2s ease-out;
-    transition-delay: 1s;
+    transition: opacity 0.5s ease-out, transform 1.3s ease-out;
+    transition-delay: 0.3s;
 }
 
 .fade.visible,
@@ -1274,6 +1287,10 @@ dd{
     .works_item h3{
         font-size: 24px;
         margin-bottom: 18px;
+    }
+
+    .concept_img2{
+        top:320px;
     }
 
     .banner{
@@ -1592,6 +1609,8 @@ dd{
         display: block;
         position: absolute;
         top: 300px;
+        animation: sway 5s ease-in-out infinite;
+        transform-origin: left bottom;
     }
 
     .about_view p{
@@ -1925,5 +1944,17 @@ dd{
 @media screen and (max-width:445px) {
     .sp-445{
         display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .sp_img{
+        top: 240px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .works_img1{
+        width: 20%;
     }
 }
